@@ -91,7 +91,7 @@
             background-color: rgb(1, 1, 22);
         }
 
-        .purple {
+        .yellow {
             color: rgb(207, 223, 59);
         }
 
@@ -207,6 +207,74 @@
             border-radius: 6px;
         }
 
+        @media screen and (max-width: 1200px) 
+        {
+            body
+            {
+                /* background-color: red; */
+            }
+            nav
+            {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .vertical-title , .vertical-desc
+            {
+                left : 45px;
+            }
+            .box
+            {
+                flex-direction: column;
+            }
+            .secondSection .vertical
+            {
+                height : unset;
+            }
+            .secondSection .box
+            {
+                width: 50vw;
+            }
+            .firstSection
+            {
+                flex-direction: column-reverse;
+            }
+            .leftSection
+            {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .rightSection
+            {
+                width: 721px !important;
+                display: flex;
+                justify-content: center;
+            }
+            .secondSection
+            {
+                max-width: 80vw;
+                margin: auto;
+                height: 141vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-top
+            {
+                top: 140px;
+            }
+            body 
+            {
+                min-width: fit-content;
+            }
+            footer
+            {
+                min-width: fit-content;
+            }
+        }
     </style>
 </head>
 
@@ -216,7 +284,7 @@
             <div class="left">Sampurna's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/index.html">Home</a></li>
                     <li><a href="/">About</a></li>
                     <li><a href="/">Projects</a></li>
                     <li><a href="/">Contact Me</a></li>
@@ -228,7 +296,7 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                Hi, I am <span class="purple">Sampurna Ghosh</span>,
+                <div>Hi, I am <span class="yellow">Sampurna Ghosh</span>,</div>
                 <div>a
                     <span id="element"></span>
                     <div class="buttons">
